@@ -1,0 +1,27 @@
+{
+  "openapi": "3.0.3",
+  "info": { "title": "API", "version": "0.1.0" },
+  "components": {
+    "schemas": {}
+  },
+  "paths": {
+    "/post": {
+      "post": {
+        "operationId": "uploadFile",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "required": ["file"],
+                "properties": { "file": { "type": "file" } }
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": { "200": { "description": "Default Response" } }
+      }
+    }
+  }
+}

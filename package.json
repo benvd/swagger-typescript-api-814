@@ -1,0 +1,16 @@
+{
+  "name": "swagger-typescript-api-814",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "generate": "swagger-typescript-api -p openapi.json -o src",
+    "start": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "swagger-typescript-api": "13.0.11"
+  },
+  "devDependencies": {
+    "typescript": "5.5.4",
+    "tsx": "4.16.5"
+  }
+}
